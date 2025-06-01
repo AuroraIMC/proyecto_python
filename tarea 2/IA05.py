@@ -17,7 +17,6 @@ sentimiento  = TextBlob(contexto).sentiment
 nlp_resumen = pipeline("summarization")
 resumen = nlp_resumen(contexto, max_length=60,do_sample=True)
 
-
 print(pregunta,respuesta_1)
 print("Una historia basada en el texto: ",texto_gen[0]["generated_text"])
 print("Un sentimiento del texto es",sentimiento)
